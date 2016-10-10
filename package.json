@@ -1,7 +1,7 @@
 {
-  "name": "game-time",
+  "name": "game-time-starter-kit",
   "version": "1.0.0",
-  "description": "Game Time project.",
+  "description": "A starter kit for Turing School's Game Time project.",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kbs5280/game-time.git"
+    "url": "https://github.com/turingschool-examples/game-time-starter-kit.git"
   },
-  "author": "Kris Sparks", "Matthew Packer"
+  "author": "Matthew Packer", "Kris Sparks"
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kbs5280/game-time.git"
+    "url": "https://github.com/turingschool-examples/game-time-starter-kit/issues"
   },
-  "homepage": "https://github.com/kbs5280/game-time.git",
+  "homepage": "https://github.com/turingschool-examples/game-time-starter-kit",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.11.4",
