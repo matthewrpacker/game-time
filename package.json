@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/turingschool-examples/game-time-starter-kit.git"
   },
-  "author": "Matthew Packer", "Kris Sparks"
+  "author": "Matthew Packer, Kris Sparks",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/turingschool-examples/game-time-starter-kit/issues"
