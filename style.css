@@ -3,3 +3,10 @@
   margin: auto;
   display: block;
 }
+
+#start-screen {
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding-bottom: 20px;
+}
