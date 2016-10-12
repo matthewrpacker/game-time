@@ -4,14 +4,7 @@
   display: block;
 }
 
-#start-screen {
-  text-align: center;
-  margin: auto;
-  display: block;
-  padding-bottom: 20px;
-}
-
-#end-screen {
+#win-screen, #end-screen, #start-screen {
   text-align: center;
   margin: auto;
   display: block;
