@@ -1,22 +1,22 @@
 const chai = require('chai')
 const expect = chai.expect;
 
-const Helicopter = require('../lib/helicopter')
+const Ufo = require('../lib/ufo')
 
 describe ('checkFlight', function(){
   it('allows a user to add a canvas context', function () {
     var canvas = document.createElement('canvas')
     var context = canvas.getContext('2d');
-    var helicopter = new Helicopter;
-    expect(helicopter.context === context);
+    var ufo = new Ufo;
+    expect(ufo.context === context);
   });
   context('is in flight', function(){
     it('should return true', function(){
       function test(){
         "use strict";
-        let helicopter = new Helicopter(60, 60, 10, 10, true);
+        let ufo = new Ufo(60, 60, 10, 10, true);
         checkFlight();
-        expect(nextBlockY).to.eq(helicopter.y - 3)
+        expect(nextBlockY).to.eq(ufo.y - 3)
       }
     })
   })
@@ -24,9 +24,9 @@ describe ('checkFlight', function(){
     it('should return false', function(){
       function test(){
         "use strict";
-        let helicopter = new Helicopter(60, 60, 10, 10, false);
+        let ufo = new Ufo(60, 60, 10, 10, false);
         checkFlight();
-        expect(nextBlockY).to.eq(helicopter.y + 3)
+        expect(nextBlockY).to.eq(ufo.y + 3)
       }
     })
   })
