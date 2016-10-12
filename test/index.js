@@ -1,4 +1,4 @@
 require ('./world-test')
 require ('./obstacle-test')
-require ('./helicopter-test')
+require ('./ufo-test')
 require ('./index-test')
