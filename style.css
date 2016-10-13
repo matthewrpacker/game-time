@@ -4,7 +4,7 @@
   display: block;
 }
 
-#start-screen {
+#win-screen, #end-screen, #start-screen {
   text-align: center;
   margin: auto;
   display: block;
