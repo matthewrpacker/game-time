@@ -1,12 +1,19 @@
 .game-canvas {
-  border: 1px dashed;
-  margin: auto;
-  display: block;
+ border: 1px solid #ffffff ;
+ border-radius: 15px;
+ margin: auto;
+ display: block;
 }
 
 #win-screen, #end-screen, #start-screen {
-  text-align: center;
-  margin: auto;
-  display: block;
-  padding-bottom: 20px;
+ text-align: center;
+ margin: auto;
+ display: block;
+ padding-top: 100px;
+ padding-bottom: 20px;
+}
+
+body {
+ background-image: url('../space.jpg');
+ color: #ffffff ;
 }
