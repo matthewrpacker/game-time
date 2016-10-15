@@ -1,6 +1,8 @@
 const chai = require('chai')
 const expect = chai.expect;
+// //
 
+const game = require('../lib/game')
 const Ufo = require('../lib/ufo')
 
 describe ('Ufo', function() {
@@ -47,6 +49,29 @@ describe ('Ufo', function() {
         expect(ufo.isFlying).to.deep.equal(true)
         let ufo1 = new Ufo(1, 2, 3, 4, false);
         expect(ufo1.isFlying).to.deep.equal(false)
+      }
+    })
+  })
+})
+
+describe ('checkFlight', function() {
+  context('is in flight', function() {
+    it('should return true', function() {
+      function test() {
+        "use strict";
+        let ufo = new Ufo(60, 60, 10, 10, true);
+        ufo.checkFlight();
+        expect(nextBlockY).to.eq(ufo.y - 3)
+      }
+    })
+  })
+  context('is not in flight', function() {
+    it('should return false', function() {
+      function test() {
+        "use strict";
+        let ufo = new Ufo(60, 60, 10, 10, false);
+        ufo.checkFlight();
+        expect(nextBlockY).to.eq(ufo.y + 3)
       }
     })
   })
