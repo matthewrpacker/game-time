@@ -1,6 +1,7 @@
 const chai = require('chai')
 const expect = chai.expect;
 
+const game = require('../lib/game')
 const Obstacle = require('../lib/obstacle')
 
 // TODO: consider obstacle default values
