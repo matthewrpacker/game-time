@@ -7,7 +7,7 @@ const Ufo = require('../lib/ufo');
 const game = require('../lib/game');
 
 describe('Obstacle', function() {
-  describe('traverse', function() {
+  context('traverse', function() {
     var obstacle = new Obstacle({x: 400, y: 0, width: 50, height: 80});
 
     it('should increment the obstacle', function() {
@@ -17,7 +17,7 @@ describe('Obstacle', function() {
     });
   });
 
-  describe('draw', function(){
+  context('draw', function(){
     it('should call fillRect on the canvas', function() {
       game.context = stub().of("fillRect");
       var obstacle = new Obstacle({context: context, x: 400, y: 0, width: 50, height: 80});
@@ -38,13 +38,13 @@ describe('Obstacle', function() {
 });
 
 describe('Ufo', function() {
-  describe('checkFlight', function() {
+  context('checkFlight', function() {
     var ufo = new Ufo({x: 60, y: 60, width: 10, height: 10, isFlying: true});
 
     it('should increment the ufo', function() {
       expect(ufo.y).to.eq(60);
       ufo.checkFlight();
-      expect(ufo.y).to.eq(57);
+      expect(ufo.y).to.eq(54);
     });
   });
 
@@ -67,3 +67,9 @@ describe('Ufo', function() {
     });
   });
 });
+
+
+
+game.context.beginPath();
+game.context.ellipse(this.x+this.width/2, this.y, this.height/2, this.height/2, 0, 0, 2*Math.PI);
+game.context.fill();
