@@ -49,27 +49,21 @@ describe('Ufo', function() {
   });
 
   describe('draw', function(){
-    it('should call fillRect on the canvas', function() {
-      game.context = stub().of("fillRect");
-      var ufo = new Ufo({context: context, x: 60, y: 60, width: 10, height: 10});
+    it('should call fill on the canvas', function() {
+      game.context = stub().of("beginPath").of("ellipse").of("fill");
+      var ufo = new Ufo({context: context, x: 60, y: 30, width: 10, height: 10});
       ufo.draw();
-      expect(game.context.fillRect.calls.length).to.eq(1);
+      expect(game.context.ellipse.calls.length).to.eq(2);
     });
 
-    it('should pass the length, width, x, y to fillRect', function(){
-      game.context = stub().of("fillRect");
-      var ufo = new Ufo({context: context, x: 60, y: 60, width: 10, height: 10});
+    it('should pass the length, width, x, y to fill', function(){
+      game.context = stub().of("beginPath").of("ellipse").of("fill");
+      var ufo = new Ufo({context: context, x: 60, y: 30, width: 10, height: 10});
       ufo.draw();
-      expect(game.context.fillRect.calls[0][0]).to.eq(ufo.x);
-      expect(game.context.fillRect.calls[0][1]).to.eq(ufo.y);
-      expect(game.context.fillRect.calls[0][2]).to.eq(ufo.width);
-      expect(game.context.fillRect.calls[0][3]).to.eq(ufo.height);
+      expect(game.context.ellipse.calls[0][0]).to.eq(ufo.x+ufo.width/2);
+      expect(game.context.ellipse.calls[0][1]).to.eq(ufo.y);
+      expect(game.context.ellipse.calls[0][2]).to.eq(ufo.height/2);
+      expect(game.context.ellipse.calls[0][3]).to.eq(ufo.height/2);
     });
   });
 });
-
-
-
-game.context.beginPath();
-game.context.ellipse(this.x+this.width/2, this.y, this.height/2, this.height/2, 0, 0, 2*Math.PI);
-game.context.fill();
