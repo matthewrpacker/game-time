@@ -4,21 +4,27 @@
   <meta charset="utf-8">
   <title>Game Time</title>
   <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 </head>
 <body>
   <div id="start-screen">
     <h1>Welcome to UFO</h1>
-    <input type="button" id="start-button" value="start">
+    <p>
+     Press play to start <br><br>
+     Press the space bar to ascend and release to descend <br><br>
+     Avoid asteroids to stay alive and win! <br><br>
+   </p>
+    <input class="button" type="button" id="start-button" value="start">
   </div>
   <div id="end-screen">
     <h1>Game Over!</h1>
-    <input type="button" id="replay-button" value="replay">
+    <input class="button" type="button" id="replay-button" value="replay">
     <ol id='game-over-top-scores'>
     </ol>
   </div>
   <div id="win-screen">
     <h1>You won!!!</h1>
-    <input type="button" id="restart-button" value="restart">
+    <input class="button" type="button" id="restart-button" value="restart">
     <ol id='you-won-top-scores'>
     </ol>
   </div>

@@ -1,25 +1,50 @@
 .game-canvas {
- border: 1px solid #ffffff ;
- border-radius: 15px;
- margin: auto;
- display: block;
+border: 1px solid #ffffff  ;
+border-radius: 15px;
+margin: auto;
+display: block;
 }
 
-#win-screen, #end-screen, #start-screen {
- text-align: center;
- margin: auto;
- display: block;
- padding-top: 100px;
- padding-bottom: 20px;
+#start-screen {
+  font-family: 'Bangers', cursive;
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#win-screen, #end-screen {
+font-family: 'Bangers', cursive;
+font-size: 40px;
+text-align: center;
+margin: auto;
+display: block;
+padding-top: 30px;
+padding-bottom: 20px;
 }
 
 body {
- background-image: url('./space.jpg');
- color: #ffffff ;
+background-image: url('./green_space.png');
+background-size: 100%;
+color: #ffffff  ;
 }
 
 li {
-  background-repeat: no-repeat;
-  margin-left: 580px;
-  padding-right: 600px;
+ background-repeat: no-repeat;
+ margin-left: 580px;
+ padding-right: 600px;
+}
+
+.button {
+   background-color: #f44336 ;
+   border: none;
+   border-radius: 8px;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
 }
