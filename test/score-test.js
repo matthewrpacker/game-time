@@ -9,13 +9,13 @@ describe ('Score', function() {
     it('should return a score', function() {
       parsecs = 10
       result = score.currentScore(parsecs)
-      expect(result).to.eq(100)
+      expect(result).to.eq(50)
     })
 
     it('should return a score for float', function() {
       parsecs = 10.00
       result = score.currentScore(parsecs)
-      expect(result).to.eq(100)
+      expect(result).to.eq(50)
     })
   })
 
@@ -26,7 +26,7 @@ describe ('Score', function() {
         scores = localStorage.getItem('storedScores').split(',').splice(1);
 
         expect(scores).to.be.instanceof(Array)
-        expect(scores[scores.length -1]).to.eq(' 100')
+        expect(scores[scores.length -1]).to.eq(' 50')
     })
   })
 
