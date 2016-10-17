@@ -44,7 +44,7 @@ describe('Ufo', function() {
     it('should increment the ufo', function() {
       expect(ufo.y).to.eq(60);
       ufo.checkFlight();
-      expect(ufo.y).to.eq(57);
+      expect(ufo.y).to.eq(54);
     });
   });
 
@@ -67,3 +67,9 @@ describe('Ufo', function() {
     });
   });
 });
+
+
+
+game.context.beginPath();
+game.context.ellipse(this.x+this.width/2, this.y, this.height/2, this.height/2, 0, 0, 2*Math.PI);
+game.context.fill();
