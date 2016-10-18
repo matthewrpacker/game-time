@@ -5,9 +5,17 @@ margin: auto;
 display: block;
 }
 
+h1 {
+  font-size: 80px;
+}
+
+p {
+  font-size: 30px;
+}
+
 #start-screen {
   font-family: 'Bangers', cursive;
-  font-size: 40px;
+  /*font-size: 40px;*/
   text-align: center;
   margin: auto;
   display: block;
@@ -33,7 +41,7 @@ color: #ffffff  ;
 
 li {
  background-repeat: no-repeat;
- margin-left: 580px;
+ margin-left: 560px;
  padding-right: 600px;
 }
 
