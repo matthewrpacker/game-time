@@ -12,8 +12,8 @@ describe('Obstacle', function() {
 
     it('should increment the obstacle', function() {
       expect(obstacle.x).to.eq(400);
-      obstacle.traverse(4);
-      expect(obstacle.x).to.eq(396);
+      obstacle.traverse();
+      expect(obstacle.x).to.eq(393);
     });
   });
 
