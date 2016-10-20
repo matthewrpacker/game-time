@@ -37,19 +37,4 @@ describe ('Obstacle', function() {
       }
     });
   });
-
-  context('trackObstacle', function() {
-    function trackObstacle(obstacle) {
-      if (obstacle.x < -obstacle.width) {
-        obstacle.x = 400;
-      }
-    }
-    it('should reset position when it moves off screen', function() {
-      var obstacle = new Obstacle({context: context, x: 7, y: 0, width: 7, height: 7});
-      expect(obstacle.x).to.eq(7);
-      trackObstacle(obstacle);
-      obstacle.traverse(16);
-      expect(obstacle.x).to.eq(400);
-    });
-  });
 });
